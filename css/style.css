@@ -5,7 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
 ul, li{
     list-style: none;
 }
@@ -1038,7 +1047,12 @@ transition-delay: 0.5s;
     .news-title { width: 100%; height: auto; margin-bottom: 10px; }
     .news-title h2 { font-size: 18px; }
     .news-img img { width: 100%; height: auto; }
-    .news-container { padding-left: 7.5vw; padding-right: 7.5vw; gap: 15px;}
+    .news-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        display: flex;
+        overflow-x: auto;
+    }
 
     /* 5. Sub Section 4 & 6 */
     .carname h2, .shop-img h2 { font-size: 24px; bottom: 80px; width: 100%; text-align: center; }
@@ -1046,6 +1060,9 @@ transition-delay: 0.5s;
     .shop-more-btn { font-size: 16px; }
     
     /* 6. Sub Section 5 */
+    .callout-text{
+        width: 160px !important;
+    }
     .callout-text p {
         font-size: 11px;
         padding: 8px;
@@ -1078,7 +1095,8 @@ transition-delay: 0.5s;
     /* 8. Footer */
     .footer-top { flex-direction: column; align-items: center; text-align: center; gap: 40px; padding-bottom: 30px; }
     .footer-logo img { width: 50px; }
-    .footer-links { flex-direction: column; gap: 30px; align-items: center; }
+    .footer-links { gap: 20px !important; /* 100px에서 20px로 줄임 */
+        text-align: center; }
     .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
 
     .top-btn{
