@@ -1040,11 +1040,11 @@ transition-delay: 0.5s;
     /* 3. Sub Section 2 (Drivers) */
     .driver-card { width: 100%; max-width: 350px; }
     .driver-card:hover { width: 100%; max-width: 350px; box-shadow: none; transform: none; transition: none;}
-    .driver-number { top: 10px; right: 10px; }
+    .driver-number { top: 30px; right: 40px; }
     .card-stats { display: none; }
 
     /* 4. Sub Section 3 (News) */
-    .newscard { width: 75vw; padding: 25px; }
+    .newscard { width: 55vw; padding: 25px; }
     .news-title { width: 100%; height: auto; margin-bottom: 10px; }
     .news-title h2 { font-size: 18px; }
     .news-img img { width: 100%; height: auto; }
